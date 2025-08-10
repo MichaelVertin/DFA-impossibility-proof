@@ -53,8 +53,7 @@ Here, there does exist an i (2), that maintains the condition of an even n and m
 The difference is this method acknowledges that the number of As that can be added is dependent on the unknown loop's size, where the original method assummed by the language must be able to support the addition of exactly one additional A. 
 
 # Restructured Version (Cleaner Design)
-The restructured version described in the link below supports generic loops and does not restrict the position of symbol insertion. \
-<Link to the separate file containing the “clean” fully-restructured method.>
+The [restructured version](https://github.com/MichaelVertin/DFA-impossibility-proof/blob/main/DFA-Impossibility.pdf) supports generic loops and does not restrict the position of symbol insertion.
 
 # Advantages & Impact
 1. Cannot prove DFA-Impossibility for languages that can be represented by DFA. 
