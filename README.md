@@ -62,7 +62,7 @@ Because the amount of As is unlimited, it must contain a loop, so the language m
 By adding **i additional As**, it must contain the string "AAAA...ABBB...B", where there are **m+i instances of A** and m instances of B. \
 Because the language only accepts strings with an equal number of instances of A and B, but the language has been proven to contain a string with i more instances of A than B, where i is greater than 0, the assumption that the DFA exists for the language is incorrect. 
 
-# Counter-Example Reattempt\
+## Counter-Example Reattempt
 **Language**: A^(i)B^(j), where i and j are both odd or both even integers\
 
 **Steps:**\
