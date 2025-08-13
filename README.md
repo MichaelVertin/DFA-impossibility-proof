@@ -62,7 +62,7 @@ Because the amount of As is unlimited, it must contain a loop, so the language m
 By adding **i additional As**, it must contain the string "AAAA...ABBB...B", where there are **m+i instances of A** and m instances of B. \
 Because the language only accepts strings with an equal number of instances of A and B, but the language has been proven to contain a string with i more instances of A than B, where i is greater than 0, the assumption that the DFA exists for the language is incorrect. 
 
-**Counter-Example Reattempt**:\
+# Counter-Example Reattempt\
 **Language**: A^(i)B^(j), where i and j are both odd or both even integers\
 
 **Steps:**\
@@ -73,12 +73,13 @@ By adding **i additional As**, it must contain the string "AAAA...ABBB...B", whe
 Here, there does exist an i (2), that maintains the condition of an even n and m or an odd n and m, so DFA-Impossibility was not proven. \
 The difference is this method acknowledges that the number of As that can be added is dependent on the unknown loop's size, where the original method assummed by the language must be able to support the addition of exactly one additional A. 
 
+# Advantages & Impact
+1. Prevents false impossibility proofs for representable languages. 
+2. Works for any loop size. 
+3. Allows insertion at any position in the string.
+4. Supports non-uniform loops (e.g. ABABAB...)
+5. Structured with clear axioms and theorems, making assumptions explicit
+
 # Reference
 A full formalized version with generic loop handling and position flexibility is available:\
 [Restructured Proof PDF](https://github.com/MichaelVertin/DFA-impossibility-proof/blob/main/DFA-Impossibility.pdf)
-
-# Advantages & Impact
-1. Cannot prove DFA-Impossibility for languages that can be represented by DFA. 
-2. Less restrictive insertion locations. 
-3. Supports generic loops. For example, it can represent a loop that repeats ABABAB.... 
-4. Clearer use of axioms and theorems to move between steps, making flaws such as the loop size assumption obvious. 
