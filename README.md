@@ -2,6 +2,8 @@
 DFA Impossibility Proof: Counterexample & Corrected Method
 
 # Abstract
+In a computer science class, the professor was using the (original) method to prove DFA-Impossibility CS315 Automata Theory for two weeks. I noticed a flaw with his method and provided a counterexample as well as a corrected approach for proving DFA impossibility. After presenting this to him, he acknowledged my method was correct. 
+
 This project identifies and corrects a flaw in a proof-by-contradiction method for showing that no DFA (Deterministic Finite Automaton) can represent a given language.
 
 The original method incorrectly assumes that if a DFA can generate a string with N instances of a symbol, it must also generate a string with N+1 instances. This assumption fails when a DFA’s loops have size greater than one.
